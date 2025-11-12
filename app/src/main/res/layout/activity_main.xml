@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <!-- 🟡 Treasure Chest -->
+    <ImageView
+        android:id="@+id/chestImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/chest"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp" />
+
+    <!-- 🟨 Progress Bar -->
+    <View
+        android:id="@+id/progressBar"
+        android:layout_width="250dp"
+        android:layout_height="12dp"
+        android:background="#FFD633"
+        app:layout_constraintTop_toBottomOf="@id/chestImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <!-- 🏁 Title Text -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You reached your daily goal!"
+        android:textColor="#333333"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <!-- 📘 Lesson Complete -->
+    <TextView
+        android:id="@+id/lessonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lesson complete! +10 XP"
+        android:textColor="#666666"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <!-- 💛 Combo Bonus -->
+    <TextView
+        android:id="@+id/comboText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Combo bonus! +2 XP"
+        android:textColor="#F2B705"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/lessonText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="6dp" />
+
+    <!-- 🔵 Continue Button -->
+    <TextView
+        android:id="@+id/continueBtn"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="CONTINUE"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:background="@drawable/rounded_red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintWidth_percent="0.8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
