@@ -17,3 +17,4 @@ Features Implemented
 ✔ Clean UI similar to the Duolingo style screenshot provided
 Screenshots
 ![Kapture 2025-11-22 at 14 44 32](https://github.com/user-attachments/assets/a3c337d8-a786-466f-aed7-98cd5bce6eb0)
+![Kapture 2025-11-22 at 13 39 02](https://github.com/user-attachments/assets/16419c4a-da9c-480b-b6e7-7bc82489ee1b)
